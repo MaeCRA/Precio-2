@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de Precios</h1>
+        <div class="form-group">
+            <input type="text" id="productName" placeholder="Nombre del producto">
+            <input type="number" id="productCost" placeholder="Costo en $CLP">
+            <input type="number" id="productQuantity" placeholder="Cantidad">
+            <select id="quantityUnit">
+                <option value="ml">ml</option>
+                <option value="L">L</option>
+                <option value="gr">gr</option>
+                <option value="Kg">Kg</option>
+            </select>
+            <button id="addProduct">+Agregar producto</button>
+            <button id="resetTable">Reiniciar</button>
+        </div>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Costo</th>
+                    <th>Cantidad</th>
+                    <th>Precio por Unidad</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se agregarán aquí con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
